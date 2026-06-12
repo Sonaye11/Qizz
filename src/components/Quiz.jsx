@@ -23,11 +23,41 @@ function Quiz() {
       ],
       answer: "Great Pyramid of Giza",
     },
+    {
+      question: "What is the largest country in the world by area?",
+      options: ["Russia", "Canada", "China", "USA"],
+      answer: "Russia",
+    },
+    {
+      question: "What is the name of Son Goku's brother? (Dragon Ball)",
+      options: ["Vegeta", "Gohan", "Broly", "Raditz"],
+      answer: "Raditz",
+    },
+    {
+      question: "Who is the third member of the Straw Hat Crew? (One peice)",
+      options: ["Brook", "Zoro", "Sanji", "Nami"],
+      answer: "Nami",
+    },
+    {
+      question:
+        "Who is the second member of the Phatom troupe? (Hunter x Hunter)",
+      options: ["Chrollo", "Nobunaga", "Feitan", "Uvogin"],
+      answer: "Feitan",
+    },
+    {
+      question: "Who is the third ranked at the end of the NEL? (Blue lock)",
+      options: ["Bashira", "Reo", "Barou", "Shidou"],
+      answer: "Shidou",
+    },
+    {
+      question: "Who is Yugi's main rival? (Yu-Gi-Oh!)",
+      options: ["Kahiba", "Pegasus", "Yami", "Dartz"],
+      answer: "Kahiba",
+    },
   ];
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const initialAnswers = [null, null, null];
+  const initialAnswers = [null, null, null, null, null, null, null, null, null];
   const [userAnswers, setUserAnswers] = useState(initialAnswers);
   const selectedAnswer = userAnswers[currentQuestion];
 
